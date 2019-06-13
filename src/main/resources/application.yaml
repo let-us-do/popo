@@ -1,0 +1,15 @@
+server:
+    port: 8080
+spring:
+    datasource:
+        driver-class-name: org.sqlite.JDBC
+        url: jdbc:sqlite:F:/popo/db/popo.db
+        max-active: 32
+        max-idle: 16
+        min-idle: 8
+        test-while-idle: true
+        time-between-eviction-runs-millis: 6000
+        validation-query: SELECT 1
+        sql-script-encoding: UTF-8
+        tomcat:
+            max-wait: 10000
